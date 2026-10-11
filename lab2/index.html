@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- метатег вікна перегляду[cite: 3] -->
+    <title>Лабораторна робота 2 - Панель керування сервісом</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="page">
+    <header class="header page__header">
+        <div class="logo header__logo">AdminPanel</div>
+        <nav class="nav header__nav">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#" class="nav__link">Дашборд</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Звіти</a></li>
+                <li class="nav__item"><a href="#" class="nav__link">Налаштування</a></li>
+            </ul>
+        </nav>
+        <div class="actions header__actions">
+            <button class="btn actions__btn">Профіль</button>
+        </div>
+    </header>
+    <aside class="sidebar page__sidebar">
+        <h2 class="sidebar__title">Меню</h2>
+        <ul class="sidebar__list">
+            <li class="sidebar__item"><a href="#" class="sidebar__link sidebar__link--active">Огляд</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link">Аналітика</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link">Користувачі</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link">Фінанси</a></li>
+            <li class="sidebar__item"><a href="#" class="sidebar__link">Інтеграції</a></li>
+        </ul>
+    </aside>
+    <main class="main page__main">
+        <div class="dashboard">
+            <article class="card dashboard__item">
+                <h3 class="card__title">Всього користувачів</h3>
+                <div class="card__value">12,450</div>
+                <p class="card__desc card__desc--positive">+15% за місяць</p>
+            </article>
+            <article class="card dashboard__item">
+                <h3 class="card__title">Загальний дохід</h3>
+                <div class="card__value">$45,200</div>
+                <p class="card__desc card__desc--positive">+8% за тиждень</p>
+            </article>
+            <article class="card dashboard__item">
+                <h3 class="card__title">Відвідування (сьогодні)</h3>
+                <div class="card__value">3,120</div>
+                <p class="card__desc card__desc--negative">-2% порівняно з вчора</p>
+            </article>
+            <article class="card dashboard__item">
+                <h3 class="card__title">Середня конверсія</h3>
+                <div class="card__value">4.2%</div>
+                <p class="card__desc card__desc--positive">+0.5% за місяць</p>
+            </article>
+            <article class="card dashboard__item">
+                <h3 class="card__title">Активні сесії</h3>
+                <div class="card__value">342</div>
+                <p class="card__desc">В режимі реального часу</p>
+            </article>
+            <article class="card dashboard__item">
+                <h3 class="card__title">Помилки сервера</h3>
+                <div class="card__value">12</div>
+                <p class="card__desc card__desc--negative">Потребує уваги</p>
+            </article>
+            <article class="card dashboard__item">
+                <h3 class="card__title">Нові відгуки</h3>
+                <div class="card__value">89</div>
+                <p class="card__desc">Непрочитані повідомлення</p>
+            </article>
+            <article class="card dashboard__item">
+                <h3 class="card__title">Навантаження ЦП</h3>
+                <div class="card__value">45%</div>
+                <p class="card__desc">У межах норми</p>
+            </article>
+        </div>
+    </main>
+    <footer class="footer page__footer">
+        <p class="footer__text">© 2026 AdminPanel.</p>
+    </footer>
+</body>
+</html>
