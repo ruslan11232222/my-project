@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЛР4 - Публікації (REST API)</title>
+    <link rel="stylesheet" href="css/api.css">
+    <script type="module" src="js/app.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Каталог публікацій (JSONPlaceholder)</h1>
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Пошук публікацій...">
+            <button id="parallelTestBtn" class="btn-secondary">Тест Promise.all (Автор #1)</button>
+        </div>
+        <div id="loadingState" class="state-block hidden">
+            <div class="spinner"></div>
+            <p>Завантаження даних...</p>
+        </div>
+        <div id="errorState" class="state-block hidden error">
+            <p id="errorMessage">Сталася помилка.</p>
+            <button id="retryBtn" class="btn-primary">Повторити</button>
+        </div>
+        <div id="successState" class="state-block">
+            <div id="emptyMessage" class="hidden">Нічого не знайдено.</div>
+            <ul id="postsList" class="posts-grid"></ul>
+            <button id="loadMoreBtn" class="btn-primary hidden">Показати ще</button>
+        </div>
+        <div id="authorProfile" class="profile-block hidden"></div>
+    </div>
+</body>
+</html>
