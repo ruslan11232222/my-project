@@ -1,3 +1,4 @@
+/* eslint-disable */
 (function () {
   console.log('--- НЕСТРОГИЙ РЕЖИМ ---');
   const check = (label, fn) => {

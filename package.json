@@ -17,6 +17,7 @@
   "author": "Руслан Коноваленко",
   "license": "ISC",
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
     "css-loader": "^7.1.5",
     "css-minimizer-webpack-plugin": "^8.0.0",
     "eslint": "^10.14.0",
