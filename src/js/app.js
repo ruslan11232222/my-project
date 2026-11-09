@@ -1,3 +1,4 @@
+import '../styles/api.css';
 import { debounce, storage } from './utils.js';
 import { fetchWithRetry, request } from './api.js';
 const BASE_URL = 'https://jsonplaceholder.typicode.com';
@@ -61,7 +62,7 @@ function renderPosts(posts, append = false) {
 }
 async function loadPosts(query = '', page = 1) {
     controller?.abort();
-    controller = new AbortСontroller();
+    controller = new AbortController();
     const signal = AbortSignal.any([
         controller.signal, 
         AbortSignal.timeout(5000)
