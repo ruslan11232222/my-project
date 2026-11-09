@@ -1,0 +1,12 @@
+{
+  "name": "web-programming-lab05",
+  "version": "1.0.0",
+  "description": "Лабораторна робота 5",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=26"
+  },
+  "author": "Руслан Коноваленко",
+  "license": "ISC"
+}
