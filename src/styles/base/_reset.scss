@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: $bg-color;
+  color: $text-color;
+  padding: px-to-rem(20);
+}
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.hidden {
+  display: none !important;
+}
+.controls, .state-block, .profile-block {
+  margin-bottom: px-to-rem(20);
+}
