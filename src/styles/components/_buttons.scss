@@ -1,0 +1,29 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+.btn {
+  padding: px-to-rem(10) px-to-rem(15);
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  &:hover {
+    opacity: 0.8;
+  }
+  &-primary {
+    @extend .btn;
+    background-color: $primary-color;
+    color: #fff;
+  }
+  &-secondary {
+    @extend .btn;
+    background-color: $secondary-color;
+    color: #fff;
+  }
+}
+input[type="text"] {
+  padding: px-to-rem(10);
+  border: 1px solid #ccc;
+  border-radius: $border-radius;
+  width: 100%;
+  max-width: 300px;
+}
