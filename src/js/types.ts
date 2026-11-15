@@ -1,22 +1,34 @@
+
 export interface TodoItem {
-  id: string;
+  readonly id: string;
   title: string;
   done: boolean;
+  createdAt?: number;
 }
 
 export interface Post {
+  readonly id: number;
   userId?: number;
-  id: number;
   title: string;
   body: string;
 }
 
 export interface Author {
-  id: number;
+  readonly id: number;
   name: string;
   username?: string;
   email?: string;
 }
+
+export type RequestState<T> =
+  | { status: 'idle' }
+  | { status: 'loading' }
+  | { status: 'success'; data: T }
+  | { status: 'error'; message: string };
+
+export type CreateTodoDto = Omit<TodoItem, 'id' | 'done'>; 
+export type UpdatePostDto = Partial<Omit<Post, 'id'>>;     
+export type PostPreview = Readonly<Pick<Post, 'id' | 'title'>>; 
 
 export function isPost(data: unknown): data is Post {
   if (typeof data !== 'object' || data === null) {
