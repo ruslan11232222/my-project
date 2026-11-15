@@ -8,16 +8,19 @@
     "node": ">=26"
   },
   "scripts": {
-    "dev": "webpack serve --mode development",
-    "build": "webpack --mode production",
-    "preview": "npx serve dist",
-    "lint": "eslint src/js/**/*.js",
-    "format": "prettier --write \"src/**/*.{js,css,html,scss}\""
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc -b --noEmit",
+    "typecheck:watch": "tsc -b --noEmit --watch",
+    "lint": "eslint .",
+    "format": "prettier --write \"src/**/*.{ts,css,html,scss}\""
   },
   "author": "Руслан Коноваленко",
   "license": "ISC",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.6",
     "css-loader": "^7.1.5",
     "css-minimizer-webpack-plugin": "^8.0.0",
     "eslint": "^10.14.0",
@@ -31,6 +34,9 @@
     "sass": "^1.108.1",
     "sass-loader": "^17.1.0",
     "style-loader": "^4.0.0",
+    "typescript": "~6.0",
+    "typescript-eslint": "^8.72.2",
+    "vite": "^8.3.8",
     "webpack": "^5.112.2",
     "webpack-cli": "^7.3.1",
     "webpack-dev-server": "^6.1.0"

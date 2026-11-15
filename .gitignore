@@ -1,8 +1,1 @@
-node_modules/
-dist/
-.env
-*.local
-*.log
-.DS_Store
-.idea/
-.vscode/
+node_modules
